@@ -113,7 +113,7 @@ public class TestAuraSDK
     }
 
     @Test
-    public void QuickStartTest()
+    public void QuickStartTest() throws Exception
     {
         //Create the Aura SDK Object
         AuraSDK sdk = new AuraSDK();
@@ -142,6 +142,9 @@ public class TestAuraSDK
             //Print the zone name and its color
             System.out.println("Light Zone Name: " + deviceFirstLight.getName() + ", Zone Color: " + deviceFirstLight.getColor());
         }
+
+        //Wait so we can see the effects.
+        Thread.sleep(2500);
 
         //Manually Release Control of the SDK (recommended, but should automatically invoke on shutdown if not done manually).
         sdk.ReleaseControl();

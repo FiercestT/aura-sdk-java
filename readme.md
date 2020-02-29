@@ -33,7 +33,7 @@ import ca.fiercest.aurasdk.Color;
 
 public class Quickstart
 {
-    public static void main(String... args)
+    public static void main(String... args) throws Exception
     {
         //Create the Aura SDK Object
         AuraSDK sdk = new AuraSDK();
