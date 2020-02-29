@@ -63,6 +63,9 @@ public class Quickstart
             System.out.println("Light Zone Name: " + deviceFirstLight.getName() + ", Zone Color: " + deviceFirstLight.getColor());
         }
 
+        //Wait so we can see the effects.
+        Thread.sleep(2500);
+
         //Manually Release Control of the SDK (recommended, but should automatically invoke on shutdown if not done manually).
         sdk.ReleaseControl();
     }
