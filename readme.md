@@ -4,25 +4,24 @@ Asus Aura SDK Wrapper for Java
 
 A Java Wrapper for the Asus Aura SDK that allows you to control your lights (GPU, Motherboard, RGB Headers, Asus Device, etc).
 
-### Does it Actually Work (Unlike others)?
+## Note: This will only work on a 32bit jvm.
 
-YES! <br>
-The provided Aura SDK on the website (version 2.0) does not work.
-Instead, the Asus Aura SDK was ported to a COM Type Library which this wrapper is interfacing... AND WORKS. Note: This wrapper was compiled for a 32 bit jvm.
+## Documentation
+
+[See the wiki.](https://github.com/FiercestT/aura-sdk-java/wiki)
 
 ### Installation
 Currently, you can add the jar manually to the classpath from the [releases](https://github.com/FiercestT/aura-sdk-java/releases). I will be making a maven repo for it soon.
 Please note, that a Com4j dll will be created in the directory that the program is executed. This is required to interact with the Aura COM Library.
 
+### Does it Actually Work (Unlike others)?
+
+YES! <br>
+The provided Aura SDK on the website (version 2.0) does not work.
+Instead, the Asus Aura SDK was ported to a COM Type Library which this wrapper is interfacing.
+
 ### Building
 The project now uses Lombok, follow this [this](https://www.baeldung.com/lombok-ide) guide to configure it with your IDE.
-
-### Documentation
-
-[See the wiki.](https://github.com/FiercestT/aura-sdk-java/wiki)
-
-Some objects from the package `ca.fiercest.aurasdk.com4j` are public to be accessed by the frontend wrapper. These are all denoted by `I{name}`
-and I do not recommend using them unless you are creating a PR or adding functionality.
 
 ### Quick Start Example
 ```java
